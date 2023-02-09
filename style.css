@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Fredoka+One&family=Poppins:wght@400;500;600;700;800&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background: url("https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGFyayUyMGNvZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .color{
+    list-style: none;
+    margin: 13px;
+    padding: 7px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(52, 87, 220, .08);
+    transition: transform .3s ease;
+}
+.color:hover .box{
+    filter: brightness(106%);
+}
+.container .color:active{
+    transform: scale(0.95);
+}
+.color .box{
+    width: 185px;
+    height: 188px;
+    border-radius: 5px;
+    background-color: #8A6CFF;
+}
+.color .hex_value{
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.refresh-btn{
+    outline: none;
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    background-color: #000;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(52, 87, 220, .2);
+    transform: translateX(-50%);
+}
